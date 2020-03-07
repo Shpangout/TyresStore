@@ -2,3 +2,4 @@
 venv/
 */migrations/*
 __pycashe__/
+db.sqlite3
