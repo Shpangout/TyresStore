@@ -1,0 +1,18 @@
+1. (Сезонность)
+	a. Winter
+	b. Summer
+	c. Allseasons
+2. Tyre (Шины)
+	a. Name
+	b. Images
+	c. 
+
+	Description
+	Width
+	Profile
+	Diameter
+	LoadRating
+	SpeedRating
+	Run Flat (Yes, No)
+
+3. Manufacturers (Производитель)
