@@ -54,7 +54,7 @@ class Tyre(models.Model):
         SpeedRating, verbose_name='Индекс скорости', on_delete=models.CASCADE
     )
     run_flat = models.BooleanField(name='Ранфлет', default=False)
-    Images = models.ImageField(name='Изображения', upload_to='images/')
+    images = models.ImageField(name='Изображения', upload_to='images/')
 
     def __str__(self):
         return self.name
