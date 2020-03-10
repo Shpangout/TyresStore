@@ -15,3 +15,24 @@
 	j. Season FC
 
 3. Manufacturers (Производитель)
+    name
+
+
+4. RatingStars
+    value SmallIntegerField
+
+5. Rating
+    ip CharField
+    star ForeignKey
+    tyre FK
+
+6. Reviews
+    email EmailField
+    name CharField
+    text TextField (5000)
+    parent ForeignKey (self, SET_NULL, blank=True, null=True
+    tyre ForeignKey (Tyre, CASCADE)
+
+
+
+

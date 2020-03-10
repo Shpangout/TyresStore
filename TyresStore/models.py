@@ -41,6 +41,16 @@ class SpeedRating(models.Model):
         verbose_name_plural = 'Индекс скорости'
 
 
+class Manufacturer(models.Model):
+    name = models.CharField(name='Производитель', max_length=100, unique=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = 'Производитель'
+
+
 class Tyre(models.Model):
     name = models.CharField(name='Шина', max_length=150)
     description = models.TextField(name='Описание')
@@ -54,6 +64,9 @@ class Tyre(models.Model):
         SpeedRating, verbose_name='Индекс скорости', on_delete=models.CASCADE
     )
     run_flat = models.BooleanField(name='Ранфлет', default=False)
+    manufacturer = models.ForeignKey(
+        Manufacturer, verbose_name='Производитель', on_delete=models.CASCADE
+    )
     images = models.ImageField(name='Изображения', upload_to='images/')
 
     def __str__(self):
@@ -63,12 +76,7 @@ class Tyre(models.Model):
         verbose_name = 'Щина'
         verbose_name_plural = 'Шины'
 
-class Manufacturer(models.Model):
-    name = models.CharField(name='Производитель', max_length=100, unique=True)
 
-    def __str__(self):
-        return self.name
 
-    class Meta:
-        verbose_name = 'Производитель'
+
 
