@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class FirtConfig(AppConfig):
+class FirstConfig(AppConfig):
     name = 'tyres'

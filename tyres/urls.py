@@ -1,8 +1,8 @@
 from django.urls import path
 
-from tyres import views
+from . import views
 
 urlpatterns = [
-    path("", views.TyreViews.as_view())
+    path("", views.TyreView.as_view())
 
 ]
