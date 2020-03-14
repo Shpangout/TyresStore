@@ -3,3 +3,4 @@ venv/
 */migrations/*
 __pycashe__/
 db.sqlite3
+TyresStore/__pycache__/
