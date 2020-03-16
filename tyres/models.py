@@ -5,7 +5,7 @@ class Width(models.Model):
     widht = models.CharField(name='Ширина', max_length=10)
 
     class Meta:
-        verbose_name = 'Щирина'
+        verbose_name = 'Ширина'
         verbose_name_plural = 'Ширина'
 
 
@@ -42,10 +42,8 @@ class SpeedRating(models.Model):
 
 
 class Manufacturer(models.Model):
-    name = models.CharField(name='Производитель', max_length=100, unique=True)
+    Manufacturer = models.CharField(name='Производитель', max_length=100, unique=True)
 
-    def __str__(self):
-        return self.name
 
     class Meta:
         verbose_name = 'Производитель'
@@ -69,8 +67,8 @@ class Tyre(models.Model):
     )
     images = models.ImageField(name='Изображения', upload_to='images/')
 
-    def __str__(self):
-        return self.name
+    #def __str__(self):
+        #return self.name
 
     class Meta:
         verbose_name = 'Щина'
