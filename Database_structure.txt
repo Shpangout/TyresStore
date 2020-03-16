@@ -19,19 +19,19 @@
 
 
 4. RatingStars
-    value SmallIntegerField
+    value (SmallIntegerField)
 
 5. Rating
-    ip CharField
-    star ForeignKey
-    tyre FK
+    ip (CharField)
+    star (ForeignKey)
+    tyre (ForeignKey)
 
 6. Reviews
-    email EmailField
-    name CharField
-    text TextField (5000)
-    parent ForeignKey (self, SET_NULL, blank=True, null=True
-    tyre ForeignKey (Tyre, CASCADE)
+    email E(mailField)
+    name (CharField)
+    text (TextField (5000))
+    parent (ForeignKey (self, SET_NULL, blank=True, null=True)
+    tyre (ForeignKey (Tyre, CASCADE))
 
 
 
