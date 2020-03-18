@@ -1,6 +1,8 @@
 .idea/
 venv/
-*/migrations/*
-__pycashe__/
+
+migrations/*
+#!/migrations/__init__.py
+
+__pycache__
 db.sqlite3
-TyresStore/__pycache__/
